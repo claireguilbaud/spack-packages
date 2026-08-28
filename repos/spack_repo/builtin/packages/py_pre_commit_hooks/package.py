@@ -11,7 +11,7 @@ class PyPreCommitHooks(PythonPackage):
     """A collection of useful pre-commit hooks."""
 
     homepage = "https://github.com/pre-commit/pre-commit-hooks"
-    pypi = "pre-commit-hooks/pre-commit-hook-4.5.0.tar.gz"
+    url = "https://github.com/pre-commit/pre-commit-hooks/archive/refs/tags/v4.5.0.tar.gz"
 
     maintainers("cedricchevalier19", "claireguilbaud")
 
