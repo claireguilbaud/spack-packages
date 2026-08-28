@@ -12,11 +12,11 @@ class PyPreCommitHooks(PythonPackage):
 
     homepage = "https://github.com/pre-commit/pre-commit-hooks"
     pypi = "pre-commit-hooks/pre-commit-hook-4.5.0.tar.gz"
-    
+
     maintainers("cedricchevalier19", "claireguilbaud")
 
     license("MIT")
-    
+
     version("4.5.0", sha256="1d6040a22a1c2a9216b4f439dfc5c626c214587e372a57b603079d9c88d2d425")
 
     # Dépendances Python minimales
@@ -26,4 +26,3 @@ class PyPreCommitHooks(PythonPackage):
 
     # Optionnel : utilisé par certains hooks YAML
     depends_on("py-ruamel-yaml", type=("build", "run"), when="@4.5.0:")
-
