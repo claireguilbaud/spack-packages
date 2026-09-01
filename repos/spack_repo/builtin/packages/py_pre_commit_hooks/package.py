@@ -28,10 +28,6 @@ class PyPreCommitHooks(PythonPackage):
     version("4.0.1", sha256="25c039a33c77aebcc1500df93125388ed4b96444c39766c42721812a96e44093")
     version("4.0.0", sha256="2ca6da2636b8d6f3afc9f0e6fe7cf36607ae0f116eb4b0f12f76d52a87336c7d")
 
-    # Dépendances Python minimales
-    depends_on("py-setuptools", type="build")
-    depends_on("py-pyyaml", type=("build", "run"))
-    depends_on("py-tomli", type=("build", "run"), when="^python@:3.10")
-
-    # Optionnel : utilisé par certains hooks YAML
-    depends_on("py-ruamel-yaml", type=("build", "run"), when="@4.5.0:")
+    # Minimum Python dependencies 
+    depends_on("py-tomli@1.1.0:", type=("build", "run"), when="^python@:3.10")
+    depends_on("py-ruamel-yaml@0.15:", type=("build", "run"))
